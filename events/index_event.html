@@ -1,0 +1,2742 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto+Mono:300,300i,400,500" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+.modal-header{
+  background-color: #b6b6ff;
+  color: white;
+  text-align: middle;
+    text-transform: uppercase;
+
+  text-align: center;
+}
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+nav {
+  width: 100%;height: 100px;position: fixed;z-index:100;color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  transition: background-color 0.4s ease-out;
+}
+
+nav span {
+  font-weight: 600;
+  letter-spacing: .085em;
+}
+
+nav button {
+  position: absolute;
+  top: 0;
+  transform: translateY(50%);
+  right: 0;
+  min-height: 1.5em;
+  min-width: 80px;
+  background-color: #eee;
+  color: #222;
+  border: 0px;
+  border-radius: 2px;
+  margin-right: 18px;
+  text-transform: uppercase;
+}
+
+nav.scroll {
+  background-color: rgba(0,0,0, 0.9);
+  color: black;
+   box-shadow: 0px 4px 7px #777;
+ 
+}
+
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:#0CF;
+}
+
+.container {
+	max-width:700px;
+	width:50%;
+	margin:0 auto; 
+box-shadow: 10px 10px 60px rgba(0, 0, 0, .4);
+  
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+  padding-left: 50px;
+   padding-right: 40px;
+}
+
+#contact h3 {
+	color: #4169E1;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#4169E1;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+.dropdown {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+
+
+.dropdown-content {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: #f9f9f9;
+
+    min-width: 260px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    padding: 20px;
+
+    z-index: 1;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+
+}
+
+
+
+	.aa{
+
+width: 100%;    
+
+					background-color: transparent;
+
+    border: solid;
+
+    color: white;
+
+    border-color: white;
+
+
+
+    padding: 15px 32px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 16px;
+
+    margin: 4px 2px;
+
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+
+    transition-duration: 0.4s;    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+	}
+
+	.aa:hover{
+
+		background-color: white;
+
+		color: black;
+
+		font-style: bold;
+
+		    transition: all 0.5s ease-in;
+
+
+
+	}
+
+</style>
+<script type="text/javascript">
+    window.onscroll = () => {
+  const nav = document.querySelector('#navbar');
+  if(this.scrollY <= 320) nav.className = ''; else nav.className = 'scroll';
+};
+  </script>
+
+	<title>Chimera 2017 | Events</title>
+
+	<meta name="description" content="CHIMERA 2017 | CONTACT US">
+
+
+
+  <meta property="og:title" content="CHIMERA 2017" />
+
+  <meta property="og:site_name" content="CHIMERA" />
+
+  <meta property="og:description" content="A couple of very special days for every creative in the world. Will you be there?" />
+
+	<meta property="og:type" content="website" />
+
+	<meta property="og:url" content="evento-milano2017.html" />
+
+	<meta property="og:image" content="../../images/sharing-offf.jpg" />
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<script src="../../assets/vendors/modernizr/modernizr.js"></script>
+
+	<link rel="stylesheet" href="../assets/css/application.css">
+
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="60x60" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="120x120" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="152x152" href="../assets/images/logo.png">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/logo.png">
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../assets/images/logo.png">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo.png">
+
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/images/logo.png">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo.png">
+
+	<link rel="manifest" href="../favicon/manifest.json">
+
+	<meta name="msapplication-TileColor" content="#ffffff">
+
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+
+	<meta name="theme-color" content="#000">
+
+
+
+	<script>
+
+		(function (i, s, o, g, r, a, m) {
+
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+
+				(i[r].q = i[r].q || []).push(arguments)
+
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+
+		m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+
+		})(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-84008772-1', 'auto');
+
+		ga('send', 'pageview');
+
+	</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+
+
+<body class="event-container" style="overflow-x: hidden;">
+
+<div class="container">
+
+  <!-- Trigger the modal with a button -->
+
+
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="aalochak" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Aalochak</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+       <!--<div style="width: 100%;height: 200px;background-image: url(images/debate.jpg);"> </div>-->
+
+          <br/><p><b>Description:</b><br/>
+
+Witness as minds attack with their opinions in this arena. Give voice to your perception regarding the issues taken up here and debate to prove your stand.<br/>
+
+<br/>
+
+<i>'Without debate, without criticism no country can succeed and no republic can survive'</i><br/><br/> Here's your chance to progress and propagate your ideas, make your opinions known and your voice heard. So come, untangle the neurons of your brain and express your opinions on the public platform. Let do the AALOCHAN and elevate our thoughts for a social cause and instill the positivity . BE RESPONSIBLE, BE AALOCHAK.
+
+
+
+<br/><br/>
+
+<b>PRELIMS :</b><br/>
+
+1.10 people will be chosen by 2 rounds of Group Discussion simultaneously (5 from each GD).<br/>
+
+2.Participants will be judged on strong agreements, ability to put forth their views and convince others.<br/><br/>
+
+<b>FINAL ROUND:</b><br/>
+
+1.2 topics will be distributed at random by chit system at the start of the final round.<br/>
+
+2.Papers will be given and 30 minutes allotted to prepare a speech.<br/>
+
+3.Each speaker will be given 2 minutes to speak.<br/>
+
+4.Medium will be in English.<br/>
+
+5.Other participants and the audience can cross question after the completion of one's speech.<br/>
+
+6.Marks will be given on the basis of clear understanding of the topic, points put forward, clarity of expression, and justification of one's view at the time of cross questioning and speech.<br/>
+
+7.Best person to explain and justify their perception (for/against the topic, as chosen by the speaker) will win.<br/>
+
+<br/> <strong>CONTACTS:</strong><br/> SAUMYA (7077102514), KARTIKEYA (7328837503)<br/>
+
+<br/><h4 style="color: red;">PRIZES WORTH: Rs.10,000</h4><br/>
+
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+<div class="modal fade" id="aboutus" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">ABOUT US</h4>
+
+
+        </div>
+
+        <div class="modal-body" style="">
+
+       <div style="width: 100%;height: 400px;background-image: url(../images/kiit.jpg); background-position: bottom; background-repeat: no-repeat;"></div>
+<section>
+<br/><br/>
+CHIMERA , “An Endeavour To Think and  Understand” , aims to provide a platform for the congregation of the entire medical fraternity of  eastern India along with other major Universities embracing the whole country under one roof. It is beyond the dimensions of just an event it is a stage where idea meets reality.  <br/>
+<br/>
+<blockquote><center>Where knowledge meets rejuvenation, <br/>
+And talent seeks recognition, <br/>
+ Stage embellished with an adroit spectra,<br/>
+Respond to beckoning Chimera. <br/>
+</blockquote> <Br/></center>
+
+If you seek knowledge, ideas, thoughts and illuminating brainwaves, and  indulgence in the most vitalizing events that keep the soul hungry for more - Chimera serves as a quixotic answer  
+<br/>
+The maiden edition of Chimera, which took place from the 4th to the 6th of November, 2016, saw humongous participations, primarily from the medical fraternity  and various fraternities of other universities, colleges and schools making it a great success. <br/><br/>
+The huge success of the event just acted as a catalyst for us to organize it with great zeal for its second edition, this year from 8th - 10th of December. 
+KIIT University feels extremely elated to welcome you all to this one of its kind confluence.<br/><br/>
+</section>
+<br/>
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+    <div class="modal fade" id="housemd" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">HOUSE MD</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p>Bring walking shoes and detective eyes<Br/>
+
+An adventurous soul and a witty mind !<br/>
+
+Join us at the event of exhilaration and fun and unveil the geek in you!<br/>
+
+Come play with friends and logic to decipher the code.<br/>
+
+<br/><br/>
+
+<b>EVENT DESCRIPTION</b> 
+
+Participate in the journey to unravel mysteries and find the hidden clues.<br/>
+
+It is a simple yet fun 'find-the- clue' event. Let's be doctor Frankenstein for a day!<br/>
+
+<br/>
+
+<b>RULES AND REGULATIONS:</b><br/><br/>
+
+• Participation: The team will consist of 3 members .<br/>
+
+• There will be two rounds<br/>
+
+<i>Round 1 - 30 mins</i>
+
+-A set of questions will be given to the teams. (Questions based on the workshop which will be
+
+played live just before this round )<br/>
+
+-Participants will be judged on score.<br/>
+
+-Top 5-6 teams will be qualified for the next round.<br/>
+
+<i>Round 2 - 60 mins</i>
+
+-This is the treasure hunt round. It will be based on some videos which will be shown on spot.<br/>
+
+-Each team will be provided with riddles to solve as fast as they can , and in the end they will
+
+have to answer the jury.<br/>
+
+-Marks will be given on creativity and insight.<br/><br/>
+
+• Any kind of external help in the form of phone, chit , internet surfing will not be
+
+entertained .<br/>
+
+• FINAL ROUND: Winners will be decided by highest score and time.<Br/>
+
+<br/> <strong>CONTACTS:</strong><br/> BISMAYEE (8763189189), ABHISHEK (8093838958)<br/>
+
+
+<br/><h4 style="color: red;"> PRIZES WORTH: Rs.9,000</h4><br/>
+
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+
+
+   <div class="modal fade" id="chaplin" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Chaplin's Bioscope</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p>Ever thought what it would be like if words you write and the thoughts you dwell is filmed to life? So here we bring you an opportunity to fulfill your dreams in this lifetime. Bring out the inner film maker in you and have your work enthrall the spectators and leave a lasting impression on their minds.<br/><br/>
+
+          <br/><b>DESCRIPTION:</b><br/><br/>
+
+           “CINEMA IS A MATTER Of WHAT'S IN THE FRAME AND  WHAT'S OUT”. The topic for the same will be health issues and social agendas. Participants have to submit their own short films.<br/><br/><b>RULES AND REGULATIONS :</b><br/><Br/>Theme- Medical Awareness
+
+<br/>1. Maximum length : 7 min<br/>
+
+2. No unparliamentary contents<br/>
+
+3. Organizers decision will be final.<br/>
+
+4. Format of video : .AVI or .MP4.<br/>
+
+5. Last date of submission - 6 th December at noon.<br/>
+
+6. Every onscreen cast, director, cinematographer and editor must be registered for “CHIMERA”.<br/>
+
+7. All actors should be student.<br/>
+
+8. One actor cannot perform in two groups.<br/>
+
+9. One group can send only one entry.<br/>
+
+10.Video can be shot from: DSLR, Phone, Digital Camera</br>
+
+11.Upload your Video on YouTube and mail the link to chaplinchimera2k17@gmail.com<br/>
+
+
+<br/> <strong>CONTACTS:</strong><br/> RAHUL (7064024112)<br/>
+
+
+<br/><h4 style="color: red">PRIZES WORTH : 10,000</h4><br/>
+
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+ 
+
+  <div class="modal fade" id="sherlocked" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">#Sherlocked</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p><b>DESCRIPTION:</b><br/><br/>My mind rebels at stagnation. Give me problems, give me work, give me the most abstruse cryptogram or the most intricate analysis. I am in my own proper atmosphere, but I abhor the dull routine that exists and I crave for mental exaltation.<br/><br/>
+
+DO THESE WORDS RING A BELL IN YOUR MIND?<br/><br/>
+
+It’s time to get into his shoes, put on your hat, and grab your magnifying glass.
+
+Seek clues, put your abilities to test, and get yourself #SHERLOCKED.
+
+<br/>
+
+<br><br/> Here&#39;s the ultimate satisfaction to your adventure-thirsty soul. So
+
+put on your Sherlock hats, and solve the not so difficult mystery with your wit and
+
+presence of mind.<br/><br/>
+
+<b>RULES AND REGULATIONS:</b><br/><br/>
+
+1. Participation – In teams of 3<br/>
+
+2. 1st ROUND :
+
+<br/><ul style="padding-left: 40px;">
+
+<li>1. If no. of teams is more than 50, It will be an MCQ round.</li>
+
+<li>2. 30 MCQs will have to be solved in 45 minutes.</li>
+
+<li>3. 50 people will be chosen from this round.</li></ul>
+
+3. 2nd ROUND :<ul style="padding-left: 40px;">
+
+<li>1. 50 selected teams from the previous round will have to report for this round
+
+next day.</li>
+
+<li>2. They will be given questions in 3 fields APTITUDE, MEMORY, REASONING.</li>
+
+
+
+
+
+<li>3. The top 5 teams who score the highest in each one of them will be listed (5
+
+in Aptitude, 5 in Memory, 5 in Reasoning) .</li>
+
+
+
+</li></ul>
+
+4. 3rd ROUND:<ul style="padding-left: 40px;">
+
+
+
+<li>1. The 5 teams will be given an extensive pictorial portraying the crime scene.</li>
+
+<li>2. 4 volunteers will be included in the story as suspects.</li>
+
+<li>3. 1 expert will guide each team through the scene</li>
+
+
+
+<li>4. Each team will be given 10 minutes to investigate the crime scene and
+
+10 minutes to interrogate the witness
+
+</li>
+
+<li>5. They have to come to a conclusion in the next 30 (+10) minutes</li>
+
+<li>6. The first team to come to a conclusion will be the winner.</li>
+
+</ul>
+<br/> <strong>CONTACTS:</strong><br/> NIKHIL (8093251331), ADITYA (7381811583)<br/>
+<h4 style="color: red">PRIZES WORTH: Rs.16,000</h4><br/>
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+  
+
+   <div class="modal fade" id="kronos" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Kronos</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p>Dance is a Hidden Language of the soul and music its food.  Now the time has come to show the world how your feet groove to the thumping beats! Not for the ones with two left feet ; this is for those who dance till they drop and sing their hearts out. Rock the Stage FELLAS!<br/><b>DESCRIPTION :</b><br/> <Br/>Unfurl your talent on the stage where dancing and singing gets you
+
+moving. Alone, or with your team, you have to perform a musical composition or a dance.<br/><br/><b>RULES AND REGULATIONS:</b>
+
+<br/><br/>
+
+<u><B>Rules for Dance Prelims:</B></u>
+
+<br/>
+
+Categories: Solo, Duet and Group:<br/>
+
+-Time limit : 3+1 minutes (Including entry and exit)<br/>
+
+- Genre : Any form of dance is allowed<br/>
+
+- Songs should be carried in MP3 format in pen drives only<br/>
+
+- No live music will be entertained<br/>
+
+- Props will be allowed (except for fire and water related props)<br/>
+
+- Derogatory words and attitude is unacceptable<br/>
+
+- The decision of the judge will be final and binding<br/><Br/>
+
+<i>Criteria for Judgement:</i><br/>
+
+- Facial expression and Body language<br/>
+
+- Choreography<br/>
+
+- Creativity and Presentation<br/>
+
+- Overall clarity and impact<br/>
+
+- Versatility and Beat sense<br/>
+
+- Coordination (in case of duet and group dance)<br/>
+
+<br/><br/>
+
+<u><B>RULES FOR DANCE FINALS:</u></B><br/><br/>
+
+
+
+Categories: Solo, Duet and Group<br/>
+
+- Time limit : 8+1 minutes (Including entry and exit)<br/>
+
+- Genre : Any form of dance is allowed<br/>
+
+- Songs should be carried in MP3 format in pen drives only<br/>
+
+- No live music will be entertained<br/>
+
+- Props will be allowed (except for fire and water related props)<br/>
+
+- Derogatory words and attitude is unacceptable<br/>
+
+
+
+- The decision of the judge will be final and binding<br/>
+
+
+
+<i>Criteria for Judgement:</i><br>
+
+
+
+- Facial expression and Body language<br/>
+
+- Choreography<br/>
+
+- Creativity and Presentation<br/>
+
+- Overall clarity and impact<br/>
+
+- Versatility and Beat sense<br/>
+
+- Coordination (in case of duet and group dance)<br/>
+
+<br/><br/>
+
+<u><strong>RULES FOR MUSIC PRELIMS:</strong></u><br/><br/>
+
+1. Solo Singing Contestant will have 2+1 minutes to perform<br/>
+
+2. Only one Accompanist or Karaoke will be allowed for Auditions.<br/>
+
+3. Duet Performances are not allowed<br/>
+
+4. A band should not have more than 7 members and less than 3 members<br/>
+
+5. Band members should carry their own equipment.<br/>
+
+6. Bands can have an unplugged/plugged set up where programmed and sampled music is
+
+strictly not allowed<br/>
+
+7. Bands will have max 6+2 minutes to perform with one song (including the sound check)<br/>
+
+8. Decisions made by Judges is final and is unquestionable.<br/>
+
+9. Vulgarity and obscenity in lyrics or in any form will lead to immediate
+
+disqualification.<br/><br/>
+
+<u><B>RULES FOR MUSIC FINALS:</u></B><br/><Br/>
+
+1. Solo Singing Contestant will have 3+1 minutes to perform<br/>
+
+2. Duet Performances are not allowed<Br/>
+
+3. A band should not have more than 7 members and less than 3 members<Br/>
+
+4. Band members should carry their own equipment.<br/>
+
+5. Bands can have an unplugged/plugged set up where programmed and sampled music is
+
+strictly not allowed<br/>
+
+6. Bands will have max 13+2 minutes to perform (including the sound check)<Br/>
+
+7. Decisions made by Judges is final and is unquestionable.<br/>
+
+8. Vulgarity and obscenity in lyrics and in any form will lead to immediate
+
+disqualification.<Br/>
+
+<br/> <strong>CONTACTS:</strong><br/> SIDDHARTH (8280245016), SNIGDHO DEEP (7064666462)<br/>
+
+<br/><h4 style="color: red">PRIZES WORTH: Rs.60,000
+
+</h4><br/>
+
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+ 
+
+  <div class="modal fade" id="adrenaline" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">ADRENALINE RUSH</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p>Being medico is difficult. A field that challenges you every day every moment. Patients teach you perseverance but at same time you need to be alert, sharp and cautious throughout the work hours. So here is an attempt to squeeze out your adrenaline. Prove your capabilities in the intense questionnaire session that will test how good you are in your field. CHALLENGE YOURSELF; FEEL YOUR TACHYCARDIA AND SYMPATHETIC SYSTEM ACTIVATE as we put you through the ADRENALINE RUSH.<br/><br/> 
+
+
+
+          <b>DESCRIPTION:</b><br/><br/> Here's the chance to rack your brains for all that you have learnt about the medical world so far. The dimension of your knowledge will reach newer heights as we unite all the 3 schools of medicine-MEDICAL, DENTAL and NURSING in this MEDIQUIZ.<br/><br/>
+
+<b>RULES AND REGULATIONS:</b><br/><br/>
+
+1. Participation: In teams of 3<br/>
+
+2. LEVEL 1 (PRELIMS): 
+
+<ul style="padding-left: 30px"><li>(i) 1 hr AND 45 mins</li>
+
+<li>(ii) The choice is yours(MCQ)</li>
+
+<li>(iii) A set of questions will be given to the participants. Those giving the maximum correct answers will proceed to the task round</li>
+
+<li>(iv) I can do that (TASK ROUND)</li></ul>
+
+<i>*10 teams will proceed to the Elimination Round from task round.</i><Br/>
+
+4. LEVEL 2 (ELIMINATION STAGE ROUND):<br/> 
+
+<ul style="padding-left: 30px"><li>(i) 30 min</li>
+
+<li>(ii) Now you see me (VISUAL ROUND)</li></ul>
+
+5. LEVEL 3(FINAL STAGE ROUND): 2hr<br/>
+
+<ul style="padding-left: 30px"><li>Once upon a time (HISTORY RELATED)</li>
+
+<li>(i) Complete incomplete (CALCULATIONS, FORM FILLINGS etc.)</li>
+
+<li>(ii) Rapid fire</li></ul>
+
+6. Any kind of external help in the form of phone, Internet surfing will not be
+
+entertained<br/>
+
+7. Winner will be decided by highest score<Br/>
+<br/> <strong>CONTACTS:</strong><br/> ARJUN (9777547940), ARPITA (9438835823)<br/>
+
+<br/><h4 style="color: red">PRIZES WORTH: Rs.16,000
+
+</h4><br/>
+
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+ <div class="modal fade" id="tracking" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">TRACKING TREASURE</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p>Just play, have fun, enjoy the game. Because life is a little less about the destination and a little more about the adventures of the journey. Because nothing really matters, except the little things.<br/><br/><b>DESCRIPTION</b><br/<br/>Here's an event for the ultimate fun and laughter you seek with simple fun filled games and a treasure hunt bonus. Hope you have a good laugh with your friends. So get ready to showcase the power of your brain and brawn.<br/><br/> 
+
+
+
+          
+
+<b>RULES AND REGULATIONS:</b><br/><br/>
+
+1.Each team will consist of 3-5 members. They can be from same or different schools/college.<br/>
+
+2. All members have to get themselves registered<br/>
+
+3. A participant can be a part of a single team only.<br/>
+
+4. There will be 3 rounds.
+
+<br/><br/>
+
+<i>ROUND 1 : QUALIFYING ROUND</i><Br/><br/>
+
+1. One member from each team has to perform the tasks given.<br/>
+
+2. Only 25-30 teams will qualify to the next round based on the
+
+performance.<br/><br/>
+
+
+
+<i>ROUND 2 : LETS WORK TOGETHER</i><Br/><Br/>
+
+1. This is team round. All the members would have to perform the task
+
+given.<br/>
+
+2. Only 6-8 teams will reach the final round.<br/><br/>
+
+<i>ROUND 3 : SEEK THE TREASURE</i><br/><br/>
+
+1. This is a treasure hunt round. Teams have to follow the clue to win.<Br/>
+
+2. This is a time based round.<br/>
+
+3.All the rules regarding the surprise games will be told on spot.<br/><Br/>
+
+<br/> <strong>CONTACTS:</strong><br/> SHRADDHA (8658173827), SHUSHANT (7064006454)<br/>
+
+<br/><h4 style="color: red">PRIZES WORTH : Rs. 9,000
+
+
+
+</h4><br/><br/>
+
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+
+
+<div class="modal fade" id="dcmarvelled" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">DC MARVELLED</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p><b>EVENT DESCRIPTION:</b><br/><br/>
+
+We all watch them, love them with our hearts. We want to be like them ;to live the dream.<br/>
+
+We’ve watched them all our childhood , now it’s time to step up for them.<br/>
+
+<br/>
+
+<i>DO YOU TRUST YOUR OWN MAGIC?</i><br/>
+
+<br/>IF YES, THEN STEP UP AND TAKE CHARGE!<br/><br/>
+
+So put your skill at test. Prove your super fan love and win hearts and cash rewards.<br/>
+
+
+
+<br/> All comic lovers out there now have a reason to rejoice! Here we
+
+present to you a quiz based on your favourite DC &amp; Marvel characters.<br/><br/>
+
+
+
+<i><b>“With great power comes great responsibility.
+
+It’s not what is underneath but what I do that
+
+
+
+defines me.”</b></i>
+
+<br/><br/>
+
+<b>RULES AND REGULATIONS:</b><br/><br/>
+
+1. Participation: In teams of 3<br/>
+
+2. Two rounds:<br/><br/>
+
+Level 1 (PRELIMS): 30 minutes.</br><br/>
+
+A set of questions will be given to the audience. Those giving the fastest
+
+correct answers will proceed to the final round.</br><br/>
+
+LEVEL 2 (FINAL STAGE ROUND): 1 hour.</br><br/>
+
+1. Any kind of external help in the form of phone, Internet surfing will not be
+
+entertained<br>
+
+2. Winner will be decided by highest score
+</br>
+<br/> <strong>CONTACTS:</strong><br/>DANIAL (9937591865), ABINASH (8763333487)<br/>
+<br/><h4 style="color: red">PRIZES WORTH:Rs.16,000</h4><br/>
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+
+
+  
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="klickit" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Klick It</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <br/><p><b>When life seems blurry, adjust the focus of your lens!</b><br/>
+
+Photography is an &quot;art of observation.” Enough with the &#39;like-game&#39; on social networking sites. Let’s project the talent inside you to the real world and reward it.<br/>
+
+So pick up the camera and bring the nature&#39;s marvellous forces to a stand still. Make the world
+
+look prettier through your viewfinders.<br/>
+
+<br/><br/>
+
+<b>DESCRIPTION:</b><br/><br/>
+
+Participants will be given a theme. They will have to do on-the- spot photography and submit the photographs.<br/><br/>
+
+<i>Submission :</i> One per entry<br/>
+
+<i>Two rounds :</i> PRELIMS & FINALS<br/>
+
+<br/>
+
+<b>RULES AND REGULATIONS</b> :<br/>
+
+<br/>
+
+1. The participants will be given a topic on the spot for the photograph to be clicked.<br/>
+
+2.They have to submit it by the deadline given.<br/>
+
+3.To be submitted directly from the SD card of the camera.<br/>
+
+4.No editing is allowed.<br/>
+
+5.All kinds of camera can be used.<br/>
+
+6.Pen drives, USB cables have to be carried by the participants.<br/>
+
+7.Laptops will be provided by the organisers.<br/>
+
+8.It is the responsibility of the participants to submit the photo on time.<br/>
+
+9.No pre shot photos will be entertained.<br/>
+
+<br/>
+
+<b>JUDGING CRITERIA:</b><br/>
+
+1. Framing<br/>
+
+2. Correspondence to the theme<br/>
+
+3. Overall impact<br/>
+
+<br/>
+<br/> <strong>CONTACTS:</strong><br/> SUBHASHIS (9453439199), KAENAT (7205653780)<br/>
+
+<h4 style="color: red">PRIZES WORTH: Rs.6,000</h4><br/>
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+  <div class="modal fade" id="docopine" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Doc-opine</h4>
+
+        </div>
+
+        <div class="modal-body" style="">
+
+          <p><b>Description:</b><br/>
+
+Discover the inner side of you step out of your regular schedule. Start questioning, Start exploring and Start inventing. Submit your project offline.<br/>
+
+<br/>
+
+<i>What is Doc-opine?</i><br/>
+
+Science is a way of thinking much more than it is a body of knowledge.
+
+It is the poetry of reality, the driving force of civilization. So, be the poet of this amazing world of science and
+
+Do share your work on "Doc-opine" to be a part of this beautiful and intriguing revolution.<br/><br/>
+
+<br/>
+
+<b>Rules and Regulations :</b><br/>
+
+1.Topic will be provided 15 days before CHIMERA and will be posted on the website.<br/>
+
+2.A presentation is to be prepared in the .ppt format.<br/>
+
+3.Time to be allotted: 5+2 (for concluding) minutes.<br/>
+
+4.Participants are requested to bring their presentations in a pen-drive and submit it 30 minutes prior to the event. Projector and laptop will be provided.<br/>
+
+5.The evaluation will be based on :
+
+<div style="padding-left: 30px;">(i)Organization and development of content.
+
+(ii)Delivery skills<br>
+
+(iii)Timing of presentation.<br/>
+
+(iv)Creativity<br/>
+
+(v)Adequate information<br/></div>
+
+<i>*Only First and Second will be awarded with prizes.</i><br/>
+<br/> <strong>CONTACTS:</strong><br/> SWAGATIKA (8763103875), SONALI (8637221201)<br/>
+<h4 style="color: red">PRIZES WORTH:10,000</h4><br/>
+
+
+
+</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+  
+
+  <div class="modal fade" id="rangmanch" role="dialog">
+
+    <div class="modal-dialog">
+
+    
+
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Rangmanch</h4>
+
+        </div>
+
+        <div class="modal-body">
+
+        
+
+          <p><b>Description</b><br/>Who said posters and advertisement are the only way to spread the word ? Plays, theatres, monoact and stukkads can be equally impactful , can't they ? So put on your mask , push the paddle and let the emotions flow. We provide you a platform for stukkad , theatre and monoact.<br/><br><i>What is RANG MANCH?</i><br/><br/>
+
+"All the world's a stage , and all the men and women merely players." Thus spake Shakespeare. Who are we to deny it? Come and masquerade as what you've never been. Deftly switching among the navarasa, show the world who you can be.
+
+<br/><br/>
+
+<b>Team Size :</b><br/>
+
+<table style="width:100%">
+
+  <tr>
+
+    <th>Event</th>
+
+    <th>Team Size</th> 
+
+   </tr>
+
+  <tr>
+
+    <td>Stukkad</td>
+
+    <td>15 (including instrument handlers)</td>
+
+ </tr>
+
+  <tr>
+
+    <td>Theatre</td>
+
+    <td>Minimum 12 and Maximum 20 people including <br/>light and sound handlers</td>
+
+    </tr>
+
+  <tr>
+
+    <td>Monocat</td>
+
+    <td>Strictly 1</td>
+
+     </tr>
+
+</table><br/>
+
+<b>Time limit :<br/></b>
+
+<table style="width:100%">
+
+  <tr>
+<th> Event</th>
+    <th>Round</th>
+
+    <th>Time</th> 
+
+   </tr>
+
+  <tr>
+<td> Stukkad</td>
+    <td>Prelims</td>
+
+    <td>12 Minutes Maximum</td>
+
+ </tr>
+
+  <tr>
+<td> </td>
+    <td>Finals</td>
+
+    <td>20 Minutes Maximum</td>
+
+    </tr>
+  <tr>
+<td> Theatre</td>
+    <td>Prelims</td>
+
+    <td>20 Minutes Maximum</td>
+
+ </tr>
+
+  <tr>
+<td> </td>
+    <td>Finals</td>
+
+    <td>50 Minutes Maximum</td>
+
+    </tr>
+  <tr>
+<td> Monocat</td>
+    <td>Prelims</td>
+
+    <td>6 Minutes Maximum</td>
+
+ </tr>
+
+  <tr>
+<td> </td>
+    <td>Finals</td>
+
+    <td>15 Minutes Maximum</td>
+
+    </tr>
+
+ 
+
+</table><br/>
+
+
+
+<i>*At most 4 to 5 teams will qualify for the finals.</i><br/><br/>
+
+<b>Nominated Themes For Finals :</b><br/>
+
+<div style="padding-left: 20px"><i>(i)Heath care<br/>
+
+(ii)Social evils and awareness (ignorance , LGBT concept etc.)<br/>
+
+(iii)Any depiction of patriotism ( real or hypothetical )<br/>
+
+(iv)Condition of medical sciences in India .<br/></i>
+
+</div><br/>
+
+<b>Rules and Regulations :</b><br/>
+
+
+
+1.Participants should take care of their props by themselves. Apart form logistics, organisers will not be responsible for providing any other items .<br/>
+
+2.Use of fire, water etc. Or any indecency or any politically controversial remark will lead to disqualification.<br/>
+
+3.The decision of judges will be considered final. Any act of disagreement will lead to disqualification.<br/>
+
+4.In case of a monoact , lights and sound handlers will not be considered as participants or a part of act.<br/>
+
+5.Every member of the teams must be registered for CHIMERA 2017 .<br/>
+
+6.Topics for stukkad , theatre or monoact should be from the above mentioned themes. You can choose any form of genre (comedy , romance , soulful etc ) for your act .<br/>
+
+7.Points will be deducted in case of exceeding the time limit.<br/>
+
+<br/> <strong>CONTACTS:</strong><br/> SUBHRADEEPA (8260275585), NAYAN (8270941609)<br/>
+
+<h4 style="color: red">PRIZES WORTH: Rs.18,000</h4><br/></p>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+  
+
+</div>
+
+
+
+	<div id="content">
+
+
+<div data-view="event" >
+<nav id="navbar">
+
+	<a href="../index.html" data-nav="home" data-filename="/en" id="site-logo">
+
+
+
+		<img src="../assets/images/offf-logo.png" alt="CHIMERA 2017" style="height: 70px;margin-top: -20px">
+
+
+
+		<!--web marketing logo for seo-->
+
+		<img src="../assets/images/offf-logo.png" alt="CHIMERA 2017" hidden style="height: 70px;margin-top: -20px">
+
+		<!--end web marketing logo for seo-->
+
+
+
+	</a>
+
+
+
+<button id="burger" class="c-burger" data-menu-trigger>
+
+	<span class="c-burger__stripe"></span>
+
+</button>
+
+
+
+
+
+<nav class="c-menu c-menu--event" id="menu-event" >
+
+
+
+<div class="c-modal" id="menu-modal">
+
+  <div class="c-modal__inner">
+
+    <div class="c-modal__content">
+
+
+<nav class="c-menu " style="margin-top: 25vh">
+
+    <a class="c-menu__link" href="../index.html"  >
+      <span class="c-menu__inner" style="color: white;">Home</span>
+    </a>
+
+  <a class="c-menu__link" data-toggle="modal" data-target="#aboutus" >
+      <span class="c-menu__inner" style="color: white;">About Us</span>
+    </a>    
+
+  <a class="c-menu__link" href="../events/index.html" >
+    <span class="c-menu__inner" style="color: white;">Events</span>
+  </a>
+
+  <a class="c-menu__link" href="../contactus/index.php" >
+    <span class="c-menu__inner" style="color: white;">Contact Us</span>
+  </a>
+
+  <a class="c-menu__link" href="../ca/index.php" >
+    <span class="c-menu__inner" style="color: white;">Campus Ambassador</span>
+  </a>
+
+</nav>
+
+</div></div>
+</div>			<a href="../index.html" data-about-trigger="c-menu__link--desktop-only" class="c-menu__link c-menu__link--desktop-only">
+
+				<span class="c-menu__inner" style="color: white;" >HOME</span>
+
+			</a>
+
+      <a data-toggle="modal" data-anchor="section-speaker" data-target="#aboutus" class="c-menu__link c-menu__link--desktop-only" style="cursor: pointer;">
+
+        <span class="c-menu__inner"  style="color: white;">ABOUT US</span>
+
+      </a>
+
+			<a href="../events/index.html" data-anchor="section-speaker" class="c-menu__link c-menu__link--desktop-only">
+
+				<span class="c-menu__inner" style="color: white;" > EVENTS </span>
+
+			</a>
+
+			<a href="../ca/index.php" target ="_blank" data-anchor="section-cover" class="c-menu__link c-menu__link--desktop-only">
+
+        <span class="c-menu__inner" style="color: white;" >CAMPUS AMBASSADORS</span>
+
+      </a>
+
+      <a href="../contactus/index.php" data-anchor="section-schedule" class="c-menu__link c-menu__link--desktop-only">
+
+        <span class="c-menu__inner" style="color: white;" >CONTACT US</span>
+
+      </a>
+
+      
+
+
+</nav>
+
+
+
+	<div id="btn-buy-placer" >
+
+		<a href="../register/index.html"  id="btn-buy-ticket"  >LOGIN / REGISTER</a>
+
+	</div>
+</nav>
+
+
+	<main id="main-event">
+
+
+
+		<div id="event-bg">
+
+
+
+			<section class="c-cover" id="section-cover" data-section>
+
+
+
+				<div class="c-cover__gradient"></div>
+
+
+
+								<div class="c-cover__media" style="background-image: url(images/zakir_event.jpg)" style="height: 70px;"></div>
+
+
+
+				<style>
+          @media screen and (min-width: 768px){
+            .c-cover__title{
+              font-size: 1px;
+            }
+          }
+          @media screen and (max-width: 768px){
+            .c-cover__title{
+              margin-top: 100px;
+            }
+          }
+        </style>
+
+
+
+				<div class="c-cover__inner">
+
+
+
+
+
+					<h1 style="color:white;" class="c-cover__title" data-speed="0.4"> </h1>
+
+					<h1 style="font-size: 30px;color:white;" class="c-cover__subtitle" data-speed="2.2"> </h1>
+
+
+					<h3 style="font-size: 20px;color:white;" class="c-cover__text" data-speed="2"> </h3>
+                     <h3 style="font-size: 20px;color:white;" class="c-cover__text" data-speed="2"> </h3>
+					 <h3 style="font-size: 20px;color:white;" class="c-cover__text" data-speed="2"> </h3>
+                     <h3 style="font-size: 20px;color:white;" class="c-cover__text" data-speed="2"> </h3>
+                     <h3 style="font-size: 20px;color:white;" class="c-cover__text" data-speed="2"> </h3>
+                     <h3 style="font-size: 20px;color:white;" class="c-cover__text" data-speed="2"> </h3>
+                     <h3 style="font-size: 20px;color:white;" class="c-cover__text" data-speed="2"> </h3>
+                     <h3 style="font-size: 25px;color:white; text-shadow:2px 2px #6a5acd	; margin-right: 80%" class="c-cover__text" data-speed="2"> # haqSeSingle </h3>					 
+					 <h1 style="font-size: 35px;color:white; text-shadow:2px 2px blue; margin-left: 80%" class="c-cover__text" data-speed="2">10TH DECEMBER</h1>
+
+				</div>
+
+
+
+			</section>
+
+
+
+<section class="c-speakers c-event-section" id="section-speaker" data-section>
+
+		<div class="c-speaker-composite">
+
+
+
+			<div class="c-speaker-composite__stripe">
+
+
+
+	<article class="c-speaker" data-speed="0.01" style="" id="kronos">
+
+	<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/dance.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">Kronos</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal; font-style: normal;">PRIZE WORTH:Rs.60,000</p>
+
+
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+
+
+		
+
+					<button data-toggle="modal" data-target="#kronos" class="aa">Details</button>
+
+											
+
+		
+
+		</div>
+
+		
+
+	</article>
+
+
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.18" id="dcmarvelled">
+
+
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/dc_marvelled.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">DC Marvelled</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal; font-style: normal;">PRIZE WORTH:Rs.16,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+			
+
+
+
+				<button data-toggle="modal" data-target="#dcmarvelled" class="aa" >Details</button>
+
+											
+
+		
+
+		</div>
+
+
+
+	</article>
+
+
+
+
+
+			</div>
+
+
+
+			<div class="c-speaker-composite__stripe c-speaker-composite__stripe--single">
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.20" id="rangmanch">
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img  src="images/rangmanch.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">Rangmanch</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.18,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+	<button data-toggle="modal" data-target="#rangmanch"    class="aa" >Details</button>
+
+				</div>							
+
+		
+
+	</article>
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+		<div class="c-speaker-composite">
+
+
+
+			<div class="c-speaker-composite__stripe">
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.01" id="docopine">
+
+
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/docupine.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro" >
+
+
+
+			<h2 class="c-speaker__name">Doc-opine</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.10,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+				<button data-toggle="modal" data-target="#docopine" class="aa" >Details</button>
+
+											
+
+		
+
+		</div>
+
+
+
+	</article>
+
+
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.18" id="sherlocked">
+
+
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/sherlock.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">#Sherlocked</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.16,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+				<button data-toggle="modal" data-target="#sherlocked" class="aa" >Details</button>
+
+											
+
+		
+
+
+
+	</article>
+
+
+
+
+
+			</div>
+
+
+
+			<div class="c-speaker-composite__stripe c-speaker-composite__stripe--single">
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.20" id="klickit">
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/klick.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">Klick It</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.6,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+				<button data-toggle="modal" data-target="#klickit" class="aa" >Details</button>
+
+											
+
+		
+
+
+
+		</div>
+
+
+
+	</article>
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+		<div class="c-speaker-composite">
+
+
+
+			<div class="c-speaker-composite__stripe">
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.01" id="housemd">
+
+
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/whisper.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">House MD</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.9,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+
+
+					<button data-toggle="modal" data-target="#housemd" class="aa" >Details</button>
+
+		
+
+
+
+		</div>
+
+
+
+	</article>
+
+
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.18" id="chaplin">
+
+
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/charlie.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">Chaplin's Bioscope</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.10,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+					<button data-toggle="modal" data-target="#chaplin" class="aa" >Details</button>
+
+		
+
+
+
+		</div>
+
+
+
+	</article>
+
+
+
+
+
+			</div>
+
+
+
+			<div class="c-speaker-composite__stripe c-speaker-composite__stripe--single">
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+		<div class="c-speaker-composite">
+
+
+
+			<div class="c-speaker-composite__stripe">
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.01" id="adrenaline">
+
+
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/adrenaline.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">Adrenaline Rush</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.16,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+					<button data-toggle="modal" data-target="#adrenaline" class="aa" >Details</button>
+
+		
+
+
+
+		</div>
+
+
+
+	</article>
+
+
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.18" id="tracking">
+
+
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img src="images/sci.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro" >
+
+
+
+			<h2 class="c-speaker__name">Tracking Treasure</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.9,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+					<button data-toggle="modal" data-target="#tracking" class="aa" >Details</button>
+
+		
+
+
+
+		</div>
+
+
+
+	</article>
+
+
+
+</div>
+
+			<div class="c-speaker-composite__stripe c-speaker-composite__stripe--single">
+
+
+
+
+
+
+
+	<article class="c-speaker" data-speed="0.20" id="aalochak">
+
+		<div class="c-speaker__media">
+
+
+
+			<figure class="c-speaker__figure c-grain">
+
+
+
+									<img  src="images/debate.jpg" alt="img">
+
+									
+
+
+
+				
+
+			</figure>
+
+
+
+		</div>
+
+
+
+		<div class=" c-speaker__intro">
+
+
+
+			<h2 class="c-speaker__name">Aalochak</h2>
+
+
+
+			<p class="c-speaker__job" style="font-family: Poppins,sans-serif; font-size: 120%; font-style: normal;">PRIZE WORTH:Rs.10,000</p>
+
+
+
+		</div>
+
+
+
+		<div class="c-speaker__footer">
+
+
+
+				<button data-toggle="modal" data-target="#aalochak" class="aa" >Details</button>
+
+											
+
+		
+
+
+
+		</div>
+
+
+
+	</article>
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+			</div>
+
+
+
+			
+
+
+
+		</div>
+</article>
+</div></div>
+
+
+
+</section>
+
+
+
+
+<section class="c-event-footer c-event-section c-event-section--vertical-lesser-spaced">
+
+	<h4 style="padding: 2vmin; background-color: rgb(0, 0, 0); color: white;display: block;width: 100%;position: absolute;left: 0;bottom: 0;margin: 0;">© 2017 Developed By <a href="../webteam">Chimera Web Team</a>. All Rights Reserved.</h4>
+
+</section>
+
+
+
+
+
+			<div id="bg-el"></div>
+
+
+
+		</div>
+
+
+
+	</main>
+
+
+
+
+
+</div>
+
+
+
+	<div id="page-transition"></div>
+
+
+
+	<div class="c-progress" id="page-progress"></div>
+
+
+
+	<script src="../assets/js/app.js"></script>
+
+
+<div class="c-modal" id="menu-modal">
+
+  <div class="c-modal__inner">
+
+    <div class="c-modal__content">
+
+
+<nav class="c-menu ">
+
+    <a class="c-menu__link" href="../index.html"  >
+      <span class="c-menu__inner">Home</span>
+    </a>
+
+  <a class="c-menu__link" href="../events/index.html" >
+    <span class="c-menu__inner">Events</span>
+  </a>
+
+  <a class="c-menu__link" href="../contactus/index.php" >
+    <span class="c-menu__inner">Contacts</span>
+  </a>
+
+  <a class="c-menu__link" href="../ca/index.php" >
+    <span class="c-menu__inner">Campus Ambassador</span>
+  </a>
+
+</nav>
+
+</div></div>
+</div>
+
+</body>
+
+
+
+
+
+</html>
